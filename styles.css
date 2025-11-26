@@ -206,8 +206,31 @@ p {
     padding: 50px 0;
 }
 
+.what-is-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
 .content-text {
     margin-bottom: 24px;
+}
+
+.feature-image {
+    width: 100%;
+    height: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.muted {
+    color: #5f6c7b;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 6px;
 }
 
 /* Process */
@@ -554,6 +577,15 @@ th {
     color: var(--quartz-dark-gray);
 }
 
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: 2px solid #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: white;
+    color: #25D366;
 }
 
 .pulse {
@@ -619,6 +651,10 @@ th {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         align-items: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
